@@ -1,0 +1,13 @@
+package com.aurionpro.structural.proxy.test;
+
+public class Test {
+	public static void main(String[] args) {
+//		Client communicate with the real object through proxy object
+//		Access restriction
+//		Caching
+//		pre-process or post-process 
+		
+		
+	}
+
+}

@@ -1,0 +1,12 @@
+package com.aurionpro.prototype.model;
+
+public class Hello {
+//	We can copy the one object to another object when we use class
+//	In this approach it is tightly coupled
+//	what about the interface?
+//	So, Solution is prototype design pattern ---> delegates the object duplication or cloning process to actual objects that are being closed
+	
+	
+//	creates a new object of the class and copies all the fields of the old object to the new one
+
+}

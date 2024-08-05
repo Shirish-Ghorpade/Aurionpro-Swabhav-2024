@@ -1,0 +1,20 @@
+package com.aurionpro.structural.composite.test;
+
+import com.aurionpro.structural.composite.model.Directory;
+import com.aurionpro.structural.composite.model.File;
+import com.aurionpro.structural.composite.model.FileSystem;
+
+public class Test {
+//	Composite design pattern means object inside the object
+	
+	Directory movies = new Directory("Movies");
+	FileSystem xyz = new File("xyz");
+	movies.add(xyz);
+	
+	
+	
+	
+	
+	
+	
+}

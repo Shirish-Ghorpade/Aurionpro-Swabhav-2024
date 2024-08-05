@@ -1,0 +1,12 @@
+package com.aurionpro.builder.test;
+
+public class UserTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		new User().UserBuilder()
+
+	}
+
+}

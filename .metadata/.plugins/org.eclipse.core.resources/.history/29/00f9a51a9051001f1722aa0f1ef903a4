@@ -1,0 +1,9 @@
+package com.aurionpro.model;
+
+public class PlayingPieceO extends PlayingPiece{
+
+	public PlayingPieceO(PieceType playingPiece) {
+		super(PieceType.O);
+		// TODO Auto-generated constructor stub
+	}
+}

@@ -1,0 +1,11 @@
+package com.aurionpro.creational.singleton.model;
+
+public class DatabaseConnection {
+	
+	private static coonection
+	private DatabaseConnection{
+		
+	}
+	
+
+}

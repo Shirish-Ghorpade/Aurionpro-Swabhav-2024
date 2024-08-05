@@ -1,0 +1,30 @@
+package com.aurionpro.creational.factory.model;
+
+public class SavingAccount implements IAccount{
+
+	@Override
+	public void credit(double amount) {
+		// TODO Auto-generated method stub
+		if(amount < 0) {
+			System.out.println("Negative value");
+			return;
+		}
+		System.out.println(amount+" is credited");
+		
+		
+	}
+
+	@Override
+	public void debit(double amount) {
+		// TODO Auto-generated method stub
+		if(amount < 0) {
+			System.out.println("Negative value");
+			return;
+		}
+		if(amount > balance) {
+			System.out.println(amount+" is credited");
+		}
+		
+	}
+
+}

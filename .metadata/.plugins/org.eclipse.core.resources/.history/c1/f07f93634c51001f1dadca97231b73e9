@@ -1,0 +1,30 @@
+package com.aurionpro.behaviour.Iterator.model;
+
+import java.util.List;
+
+public class BookIterator implements Iterator {
+
+	private List<Book> books;
+	private int index = 0;
+	
+	
+
+	public BookIterator(List<Book> books, int index) {
+		super();
+		this.books = books;
+		this.index = index;
+	}
+
+	@Override
+	public boolean hasNext() {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public Object next() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

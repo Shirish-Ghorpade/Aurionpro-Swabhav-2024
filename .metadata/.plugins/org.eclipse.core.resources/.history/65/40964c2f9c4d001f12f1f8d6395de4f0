@@ -1,0 +1,18 @@
+package com.aurionpro.srp.solution.model;
+
+public class InvoicePrinter {
+	Invoice invoice;
+	
+	
+	public InvoicePrinter(Invoice invoice) {
+		super();
+		this.invoice = invoice;
+	}
+
+
+	public void printInvoice() {
+		System.out.println("Print invoice");
+//		System.out.println("Invoice [id=" + invoice.getId()+ ", description=" + invoice.getDescription() + ", amount=" + invoice.getAmount()+ ", tax=" + invoice.getTax() + " % "+" payable amount is "+ CalculateTax+"]");
+	}
+
+}

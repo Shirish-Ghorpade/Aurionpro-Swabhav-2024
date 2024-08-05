@@ -1,0 +1,12 @@
+package com.aurionpro.model;
+
+import org.junit.jupiter.api.Test;
+
+public class PlayerTest {
+	@Test
+	void testSetName() {
+		PlayingPiece playingPiece = new PlayingPieceX();
+		Player player = new Player("Player 'X'", playingPiece)
+		
+	}
+}

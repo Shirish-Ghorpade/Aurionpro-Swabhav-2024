@@ -1,0 +1,99 @@
+package com.aurionpro.abstractfactory.model;
+
+import com.aurionpro.abstractfactory.model.AccountType;
+
+public class CurrentAccount implements IAccount {
+
+	private long accountNumber;
+	private String name;
+	private double balance;
+	private AccountType bankAccountType;
+	private double overDraftLimit;
+	private double loan=0;
+
+	public CurrentAccount(long accountNumber, String name, double balance, AccountType bankAccountType,
+			double overDraftLimit) {
+		super();
+		this.accountNumber = accountNumber;
+		this.name = name;
+		this.balance = balance;
+		this.bankAccountType = bankAccountType;
+		this.overDraftLimit = overDraftLimit;
+	}
+
+	public long getAccountNumber() {
+		return accountNumber;
+	}
+
+	public void setAccountNumber(long accountNumber) {
+		this.accountNumber = accountNumber;
+	}
+
+	public double getOverDraftLimit() {
+		return overDraftLimit;
+	}
+
+	public void setOverDraftLimit(double overDraftLimit) {
+		this.overDraftLimit = overDraftLimit;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public double getBalance() {
+		return balance;
+	}
+
+	public void setBalance(double balance) {
+		this.balance = balance;
+	}
+
+	public AccountType getBankAccountType() {
+		return bankAccountType;
+	}
+
+	public void setBankAccountType(AccountType bankAccountType) {
+		this.bankAccountType = bankAccountType;
+	}
+
+	public void credit(double amount) {
+		if (amount <= 0) {
+			System.out.println("Negative or zero amount is not valid");
+			return;
+		}
+		if (loan == 0) {
+			balance += amount;
+		} else if (amount <= loan) {
+			loan -= amount;
+		} else if (amount > loan) {
+			balance = amount - loan;
+			loan=0;
+		}
+		System.out.println(
+				"You deposited " + amount + " so, current balance of account number " + getAccountNumber()
+						+ " is " + getBalance() + " and your remaining loan is " + loan);
+
+	}
+
+	public void debit(double amount) {
+		if (amount <= 0) {
+			System.out.println("Negative or zero amount is not valid");
+			return;
+		} else if (amount <= super.getBalance()) {
+			super.setBalance(super.getBalance() - amount);
+		} else if (amount <= super.getBalance() + OVER_DRAFT_LIMIT) {
+			loan = amount-super.getBalance();
+			super.setBalance(0);
+		} else if (amount > super.getBalance() + OVER_DRAFT_LIMIT) {
+			throw new OverDraftLimitExceedsException(amount, super.getBalance(), OVER_DRAFT_LIMIT);
+		}
+		System.out.println(
+				"Now your account balance is " + super.getBalance() + " and you have loan of " + loan);
+	}
+
+}

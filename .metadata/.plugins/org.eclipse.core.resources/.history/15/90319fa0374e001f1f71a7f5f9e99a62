@@ -1,0 +1,18 @@
+package com.aurionpro.solution.test;
+
+import com.aurionpro.solution.model.Diwali;
+import com.aurionpro.solution.model.FixedDeposit;
+import com.aurionpro.solution.model.Holi;
+
+public class FDTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		FixedDeposit fixedDeposit = new FixedDeposit(100, "Shirish", 1000.0, 5, new Diwali());
+		System.out.println(fixedDeposit);
+		FixedDeposit fixedDeposit1 = new FixedDeposit(100, "Shirish", 1000.0, 5, new Holi());
+		System.out.println(fixedDeposit1);
+		
+	}
+
+}

@@ -1,0 +1,9 @@
+package com.aurionpro.behaviour.command.model;
+
+public class RemoteControl {
+	ICommand command;
+	
+	public RemoteControl() {
+		
+	}
+}

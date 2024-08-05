@@ -1,0 +1,10 @@
+package com.aurionpro.prototype.test;
+
+public class BookTest {
+	public static void main(String[] args) {
+		private int bookId;
+		private String bookName;
+		
+	}
+
+}

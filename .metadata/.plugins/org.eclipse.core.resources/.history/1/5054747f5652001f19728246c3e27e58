@@ -1,0 +1,22 @@
+package com.aurionpro.model;
+
+import static org.junit.jupiter.api.Assertions.assertNotNull;
+
+import org.junit.jupiter.api.BeforeEach;
+
+public class TicTacToeFacadeTest {
+	private TicTacToeFacade facade;
+	
+	@BeforeEach
+	void setUp() {
+		facade = new TicTacToeFacade(null);
+	}
+	 @Test
+	 void testStartGame() {
+		String result = facade.startGame();
+		assertNotNull(result);
+	 }
+	
+	
+	
+}

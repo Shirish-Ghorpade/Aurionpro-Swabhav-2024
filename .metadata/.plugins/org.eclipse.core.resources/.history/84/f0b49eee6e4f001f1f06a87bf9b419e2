@@ -1,0 +1,18 @@
+package com.aurionpro.builder.model;
+
+public class User {
+	
+	
+//	We have the to pass many arguments to create the object
+//	Some parameters might be optional
+//	factory class takes all responsibility for creating object is heavy then all complexity is the part of of factory class.
+//	It is also helpful to create the immutable objects
+	
+	
+	
+	private String userId;
+	private String userName;
+	private String emailId;
+	
+
+}

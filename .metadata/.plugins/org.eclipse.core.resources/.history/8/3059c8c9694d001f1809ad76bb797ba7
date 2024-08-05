@@ -1,0 +1,22 @@
+package com.aurionpro.test;
+
+import java.util.Arrays;
+import java.util.List;
+import java.util.stream.Collectors;
+
+public class Assignment {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		String names[] = {"Jayesh", "Nimesh", "Mark", "Mahesh", "Ramesh"};
+		
+		List<String>namesList = Arrays.asList(names);
+		
+		System.out.println("First 3 students in ascending order");
+		List<String>SortedNames = namesList.stream().sorted().limit(3).collect(Collectors.toList());
+		SortedNames.forEach((number)-> System.out.println(number));
+
+	}
+
+}

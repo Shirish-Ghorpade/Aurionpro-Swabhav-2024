@@ -1,0 +1,9 @@
+package com.aurionpro.model;
+
+public class PlayingPiece {
+	public PieceType playingPiece;
+
+	public PlayingPiece(PieceType playingPiece) {
+		this.playingPiece = playingPiece;
+	}
+}

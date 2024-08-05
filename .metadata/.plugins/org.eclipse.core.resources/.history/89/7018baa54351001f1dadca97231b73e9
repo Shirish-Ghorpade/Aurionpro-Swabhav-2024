@@ -1,0 +1,13 @@
+package com.aurionpro.behaviour.command.model;
+
+public class TurnOffCommand implements ICommand{
+	
+	AirConditoner ac;
+	@Override
+	public void execute() {
+		// TODO Auto-generated method stub
+		
+		
+	}
+	
+}

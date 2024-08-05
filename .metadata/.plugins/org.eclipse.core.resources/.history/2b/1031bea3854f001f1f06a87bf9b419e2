@@ -1,0 +1,19 @@
+package com.aurionpro.prototype.test;
+
+import com.aurionpro.prototype.model.BookShop;
+
+public class BookTest {
+	public static void main(String[] args) {
+		BookShop bookShop = new BookShop();
+		bookShop.setShopName("XYZ");
+		bookShop.loadData();
+		System.out.println(bookShop);
+		
+		
+		BookShop bookShop1 = bookShop.clone();
+		bookShop1.setShopName("XYZ");
+		System.out.println(bookShop1);
+		
+	}
+
+}

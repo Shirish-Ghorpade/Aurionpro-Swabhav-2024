@@ -1,0 +1,28 @@
+package com.aurionpro.test;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Random;
+
+public class Assignement2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		
+		List<Account>accounts = new ArrayList<Account>();
+				
+				new Account(1234, "Shirish", 10000.90);
+		
+		
+		
+
+	}
+	
+	
+	private static long setAccountNumber() {
+		Random random = new Random();
+		return 10000000000L + (long) (random.nextDouble() * 9000000000L);
+	}
+
+}

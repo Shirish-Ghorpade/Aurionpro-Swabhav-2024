@@ -1,0 +1,26 @@
+package com.aurionpro.structural.proxy.test;
+
+import com.aurionpro.structural.proxy.model.Employee;
+import com.aurionpro.structural.proxy.model.EmployeeDB;
+import com.aurionpro.structural.proxy.model.ProxyDB;
+
+public class Test {
+	public static void main(String[] args) {
+//		Client communicate with the real object through proxy object
+//		Access restriction
+//		Caching
+//		pre-process or post-process 
+		
+		try {
+			EmployeeDB empObj = new ProxyDB();
+			empObj.create("USER", new Employee());
+			System.out.println("Operation sucessful");
+			
+			
+		}catch (Exception e) {
+			// TODO: handle exception
+			System.out.println(e.getMessage());
+		}
+	}
+
+}

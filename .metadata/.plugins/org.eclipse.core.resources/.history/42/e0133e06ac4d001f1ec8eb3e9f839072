@@ -1,0 +1,19 @@
+package com.aurionpro.test;
+
+import java.io.FileReader;
+
+public class PrintUsingFileReader {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		FileReader fileReader = new FileReader("D:\\Aurionpro_Training\\18-streams-app\\src\\com\\aurionpro\\test\\test");
+		int ch;
+		while(ch=fileReader.read()) != -1){
+			if(ch=='\n') {
+				
+			}
+		}
+
+	}
+
+}

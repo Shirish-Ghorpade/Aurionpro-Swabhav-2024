@@ -1,0 +1,11 @@
+package com.aurionpro.structural.decorator.model;
+
+public abstract class OilChange extends CarServiceDecorator{
+	
+	
+	@Override
+	public double getCost() {
+		// TODO Auto-generated method stub
+		return 500+super.getCost();
+	}	
+}

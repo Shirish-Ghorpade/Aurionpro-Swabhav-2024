@@ -1,0 +1,24 @@
+package com.aurionpro.creational.factory.test;
+
+import com.aurionpro.creational.factory.model.AccountFactory;
+import com.aurionpro.creational.factory.model.IAccount;
+
+public class AccountTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		IAccount account;
+		
+		account = AccountFactory.makeAccount(AccountType.SAVING);
+		account.credit(1000);
+		account.debit(1000);
+		
+		account = AccountFactory.makeAccount(AccountType.CURRENT);
+		account.credit(1000);
+		account.debit(1000);
+		
+		
+
+	}
+
+}

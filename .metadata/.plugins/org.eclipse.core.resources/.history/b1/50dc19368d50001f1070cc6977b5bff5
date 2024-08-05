@@ -1,0 +1,6 @@
+package com.aurionpro.behavioural.observer.model;
+
+public class SMSNotification {
+	
+
+}

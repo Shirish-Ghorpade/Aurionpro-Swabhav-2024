@@ -1,0 +1,10 @@
+package com.aurionpro.srp.solution.model;
+
+public class InvoicePrinter {
+	Private Invoice invoice;
+	public void printInvoice() {
+		System.out.println("Print invoice");
+		System.out.println("Invoice [id=" + id + ", description=" + description + ", amount=" + amount + ", tax=" + tax + " %]");
+	}
+
+}

@@ -1,0 +1,44 @@
+package com.aurionpro.model;
+
+import static org.junit.jupiter.api.Assertions.assertDoesNotThrow;
+import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertNotNull;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+
+import java.util.Scanner;
+
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+
+public class TicTacToeFacadeTest {
+	private TicTacToeFacade facade;
+	Scanner Scanner = new Scanner(System.in);
+
+	@BeforeEach
+	void setUp() {
+		facade = new TicTacToeFacade(3);
+	}
+
+	@Test
+	void testStartGame() {
+		facade.initializeGame();
+		String result = facade.startGame();
+		assertNotNull(result);
+	}
+
+	@Test
+	void testPrintBoard() {
+		facade.initializeGame();
+		assertDoesNotThrow(() -> facade.printBoard());
+	}
+
+	@Test
+	void testAddPiece() {
+		facade.initializeGame();
+		Player player = new Player("Test Player", new PlayingPieceX());
+		assertTrue(facade.addPiece(1, 1, player));
+
+		assertFalse(facade.addPiece(1, 1, player));
+	}
+
+}

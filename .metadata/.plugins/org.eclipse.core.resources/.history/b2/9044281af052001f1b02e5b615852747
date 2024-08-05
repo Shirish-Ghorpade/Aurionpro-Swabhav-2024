@@ -1,0 +1,15 @@
+package com.aurionpro.model;
+
+import org.mockito.Mockito;
+
+public class StudentTest {
+	
+	IStudentService studentService;
+	Student student;
+	public void inti() {
+		studentService  = Mockito.mock(IStudentService.class);
+		student = new Student(studentService);
+		
+	}
+
+}

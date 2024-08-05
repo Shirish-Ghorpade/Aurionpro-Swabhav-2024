@@ -1,0 +1,14 @@
+package com.aurionpro.model;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+import org.junit.jupiter.api.Test;
+
+public class PlayingPieceXTest {
+
+	@Test
+	void testPlayingPieceXConstructor() {
+		PlayingPieceO piece = new PlayingPieceO();
+		assertEquals('X', piece.getPieceType());
+	}
+}

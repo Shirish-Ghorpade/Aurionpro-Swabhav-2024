@@ -1,0 +1,8 @@
+package com.aurionpro.model;
+
+public class Country {
+	private String countCode;
+	private String countName;
+	private int regionId;
+	
+}

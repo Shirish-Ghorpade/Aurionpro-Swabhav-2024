@@ -1,0 +1,25 @@
+package com.aurionpro.abstractfactory.model;
+
+import java.util.Scanner;
+
+import com.aurionpro.creational.factory.model.IAccount;
+
+public class SavingFactory implements IAccountFactory{
+	
+	@Override
+	public void makeAccount() {
+		// TODO Auto-generated method stub
+		Scanner scanner = new Scanner(System.in);
+		String name;
+		long balance;
+		
+		System.out.println("Enter the name of account holder ");
+		name = scanner.nextLine();
+		
+		
+		System.out.println("Enter the account balance");
+		balance = scanner.nextLong();
+		
+	}
+
+}

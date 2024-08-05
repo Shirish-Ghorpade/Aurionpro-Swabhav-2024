@@ -1,0 +1,13 @@
+package com.aurionpro.test;
+
+import com.aurionpro.model.TicTacToeGame;
+
+public class TicTacToeGameTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		TicTacToeGame game = new TicTacToeGame();
+		game.initializationGame();
+		game.startGame();
+	}
+}

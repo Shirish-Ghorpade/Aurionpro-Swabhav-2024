@@ -1,0 +1,19 @@
+package com.aurionpro.structural.decorator.model;
+
+public class OilChange extends CarServiceDecorator{
+	ICarService iCarService;
+
+	@Override
+	public void oilChange() {
+		return 500+super.getCost()
+		
+	}
+
+	@Override
+	public void wheelAlign() {
+		// TODO Auto-generated method stub
+		
+	}
+	
+	
+}

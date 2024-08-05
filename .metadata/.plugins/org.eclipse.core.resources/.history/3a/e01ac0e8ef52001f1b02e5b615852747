@@ -1,0 +1,11 @@
+package com.aurionpro.model;
+
+public class StudentTest {
+	
+	IStudentService studentService;
+	Student student;
+	public void inti() {
+		
+	}
+
+}

@@ -1,0 +1,13 @@
+package com.aurionpro.model;
+
+public class TicTacToeFacadeTest {
+	private TicTacToeFacade facade;
+	
+	@BeforeEach
+	void setUp() {
+		facade = new TicTacToeFacade(null);
+		
+	}
+	
+	
+}

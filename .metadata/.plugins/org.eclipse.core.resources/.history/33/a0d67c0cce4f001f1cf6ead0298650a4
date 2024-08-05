@@ -1,0 +1,29 @@
+package com.aurionpro.strutural.adaptor.test;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import com.aurionpro.strutural.adaptor.model.Biscuit;
+import com.aurionpro.strutural.adaptor.model.Chocolate;
+import com.aurionpro.strutural.adaptor.model.Hat;
+import com.aurionpro.strutural.adaptor.model.HatAdaptor;
+import com.aurionpro.strutural.adaptor.model.IItem;
+import com.aurionpro.strutural.adaptor.model.ShoppingCart;
+
+public class ShoppingCartTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		List<IItem> items = new ArrayList<IItem>();
+		items.add(new Biscuit("Parle", 10));
+		items.add(new Chocolate("cadbury", 20));
+		Hat hat;
+		HatAdaptor hatAdaptor = new HatAdaptor(hat);
+		
+		ShoppingCart shoppingCart = new ShoppingCart();
+		shoppingCart.addItemstoCart(items);
+
+	}
+
+}

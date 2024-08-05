@@ -1,0 +1,16 @@
+package com.aurionpro.behaviour.state.model;
+
+public class Packet {
+	
+	IPacketState iPacketObj;
+	public void nextState() {
+		iPacketObj.next(packet);
+	}
+	
+	public void previousState() {
+		
+	}
+	public void printStatus() {
+		
+	}
+}

@@ -1,0 +1,24 @@
+package com.aurionpro.test;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.stream.Collectors;
+
+import com.sun.xml.internal.bind.v2.runtime.unmarshaller.XsiNilLoader.Array;
+
+public class Assignment {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		String names[] = {"Jayesh", "Nimesh", "Mark", "Mahesh", "Ramesh"};
+		
+		List<String>namesList = Arrays.toList(names);
+		
+		System.out.println("First 3 students in ascending order");
+		List<String>SortedNames = names.stream().sorted().collect(Collectors.toList());
+		SortedNumbers.forEach((number)-> System.out.println(number));
+
+	}
+
+}

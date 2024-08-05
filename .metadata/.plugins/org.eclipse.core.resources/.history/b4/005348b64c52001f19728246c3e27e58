@@ -1,0 +1,102 @@
+package com.aurionpro.model;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+
+import java.util.Deque;
+import java.util.LinkedList;
+
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+
+public class TicTaeToeGameTest {
+	private TicTacToeGame game;
+	private Deque<Player> players;
+
+	@BeforeEach
+	public void setUp() {
+		game = new TicTacToeGame();
+		players = new LinkedList<>();
+		PlayingPieceX crossPiece = new PlayingPieceX();
+		Player player0 = new Player("Player 'X' ", crossPiece);
+
+		PlayingPieceO noughtsPiece = new PlayingPieceO();
+		Player player2 = new Player("Player 'O' ", noughtsPiece);
+
+		players.add(player0);
+		players.add(player2);
+
+		game.setPlayers(players);
+		game.setGameBoard(new Board(3));
+	}
+
+	@Test
+	public void testGameInitilization() {
+		assertEquals(2, game.getPlayers().size());
+		assertEquals(3, game.getGameBoard().getSize());
+	}
+
+	@Test
+	public void testValidMove() {
+		boolean moveSucessful = game.getGameBoard().addPiece(0, 0, game.getPlayers().peek().getPlayingPiece());
+		assertFalse(moveSucessful);
+		assertEquals('X', game.getGameBoard().getBoard()[0][0].getPieceType());
+	}
+	
+	@Test
+	public void testInvalidMoveOutOfBound() {
+		boolean moveSucessful = game.getGameBoard().addPiece(0, 0, game.getPlayers().peek().getPlayingPiece());
+		assertFalse(moveSucessful);
+		assertEquals('X', game.getGameBoard().getBoard()[0][0].getPieceType());
+	}
+	
+	@Test
+	public void testInvalidMoveAlredyTaken() {
+		game.getGameBoard().addPiece(0, 0, game.getPlayers().peek().getPlayingPiece());
+		boolean moveSucessful = game.getGameBoard().addPiece(0, 0, game.getPlayers().peek().getPlayingPiece());
+		assertFalse(moveSucessful);
+	}
+
+	@Test
+	public void testWinnerRow() {
+		game.getGameBoard().addPiece(0, 0, new PlayingPieceX());
+		game.getGameBoard().addPiece(0, 0, new PlayingPieceX());
+		game.getGameBoard().addPiece(0, 2, new PlayingPieceX());
+		boolean isWinner = game.isThereWinner(0, 2, 'X');
+		assertTrue(isWinner);
+	}
+
+	@Test
+	public void testWinnerColumn() {
+		game.getGameBoard().addPiece(0, 0, new PlayingPieceX());
+		game.getGameBoard().addPiece(2, 0, new PlayingPieceX());
+		game.getGameBoard().addPiece(3, 0, new PlayingPieceX());
+		boolean isWinner = game.isThereWinner(2, 0, 'X');
+		assertTrue(isWinner);
+	}
+
+	@Test
+	public void testWinnerDiagonal() {
+		game.getGameBoard().addPiece(0, 0, new PlayingPieceX());
+		game.getGameBoard().addPiece(0, 0, new PlayingPieceX());
+		game.getGameBoard().addPiece(2, 2, new PlayingPieceX());
+		boolean isWinner = game.isThereWinner(2, 2, 'X');
+		assertTrue(isWinner);
+	}
+
+	@Test
+	public void testTie() {
+		game.getGameBoard().addPiece(0, 0, new PlayingPieceX());
+		game.getGameBoard().addPiece(0, 0, new PlayingPieceX());
+		game.getGameBoard().addPiece(0, 2, new PlayingPieceX());
+		game.getGameBoard().addPiece(0, 0, new PlayingPieceX());
+		game.getGameBoard().addPiece(0, 0, new PlayingPieceX());
+		game.getGameBoard().addPiece(0, 2, new PlayingPieceX());
+		game.getGameBoard().addPiece(2, 0, new PlayingPieceX());
+		game.getGameBoard().addPiece(2, 0, new PlayingPieceX());
+		game.getGameBoard().addPiece(2, 2, new PlayingPieceX());
+		assertEquals("tie", game.startGame());
+	}
+
+}

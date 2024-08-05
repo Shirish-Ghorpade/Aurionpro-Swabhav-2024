@@ -1,0 +1,8 @@
+package com.aurionpro.prototype.model;
+
+public class Hello {
+//	We can copy the one object to another object when we use class
+//	In this approch it is tightly coupled
+//	what about the interface?
+
+}

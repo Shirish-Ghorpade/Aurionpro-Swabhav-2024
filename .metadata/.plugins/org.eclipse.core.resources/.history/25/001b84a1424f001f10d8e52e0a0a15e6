@@ -1,0 +1,29 @@
+package com.aurionpro.creational.factory.test;
+
+import com.aurionpro.creational.factory.model.CarFactory;
+import com.aurionpro.creational.factory.model.ICar;
+import com.aurionpro.creational.factory.model.Mahindra;
+import com.aurionpro.creational.factory.model.Tata;
+
+public class Test {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		ICar car;
+		ICar maruti = CarFactory.makeCar("Maruti");
+		maruti.start();
+		maruti.stop();
+		
+		ICar tata = new Tata();
+		tata.start();
+		tata.stop();
+		
+		car mahindra = new Mahindra();
+		mahindra.start();
+		mahindra.stop();
+		
+
+	}
+
+}

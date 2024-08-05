@@ -1,0 +1,8 @@
+package com.aurionpro.simple_violation.model;
+
+
+public class InvoiceDao {
+	Invoice invoice;
+	
+
+}

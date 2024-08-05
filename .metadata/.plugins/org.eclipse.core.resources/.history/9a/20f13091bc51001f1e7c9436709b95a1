@@ -1,0 +1,19 @@
+package com.aurionpro.model;
+
+public class TicTacToeFacade {
+	private TicTacToeGame game;
+
+	public TicTacToeFacade(TicTacToeGame game) {
+		super();
+		this.game = game;
+	}
+	
+	public void initializeGame() {
+		game.initializationGame();
+	}
+	
+	public String startGame() {
+		return game.startGame();
+	}
+
+}

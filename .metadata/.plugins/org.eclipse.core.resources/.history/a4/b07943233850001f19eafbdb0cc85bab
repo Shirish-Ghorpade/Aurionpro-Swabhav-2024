@@ -1,0 +1,23 @@
+package com.aurionpro.structural.composite.model;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Directory implements FileSystem{
+	
+	private String directoryName;
+	private List<FileSystem> list = new ArrayList<FileSystem>();
+
+	public Directory(String directoryName, List<FileSystem> list) {
+		super();
+		this.directoryName = directoryName;
+		this.list = list;
+	}
+
+	@Override
+	public void ls() {
+		// TODO Auto-generated method stub
+		
+	}
+	
+}

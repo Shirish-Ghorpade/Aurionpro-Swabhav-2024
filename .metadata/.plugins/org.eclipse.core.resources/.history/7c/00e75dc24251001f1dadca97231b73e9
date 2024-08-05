@@ -1,0 +1,8 @@
+package com.aurionpro.behaviour.command.model;
+
+public class AirConditoner {
+	boolean turnOn = false;
+	int temperature;
+	
+
+}

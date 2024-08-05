@@ -1,0 +1,29 @@
+package com.aurionpro.solution.test;
+
+import java.util.List;
+
+import com.aurionpro.solution.model.Builder;
+import com.aurionpro.solution.model.GuitarSpec;
+import com.aurionpro.solution.model.Inventory;
+import com.aurionpro.solution.model.Type;
+import com.aurionpro.solution.model.Wood;
+
+public class FindGuitarTester {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Inventory inventory = new Inventory();
+		intializeInventory(inventory);
+		GuitarSpec whatErinLikes = new GuitarSpec(Builder.FENDER, "Stracastor", Type.ELECTRIC, Wood.ALDER, Wood.ALDER);
+		
+		List<GuitarSpec> matchingGuitars = inventory.search(whatErinLikes);
+		if(!matchingGuitars.isEmpty()) {
+			System.out.println(matchingGuitars);
+			return;
+		}
+		System.out.println("Sorry, Guitar is not found");
+	}
+	private static void intializeInventory(Inventory inventory) {
+		//Add items
+	}
+}

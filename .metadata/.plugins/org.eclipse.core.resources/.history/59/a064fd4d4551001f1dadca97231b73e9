@@ -1,0 +1,24 @@
+package com.aurionpro.behaviour.command.test;
+
+import com.aurionpro.behaviour.command.model.RemoteControl;
+import com.aurionpro.behaviour.command.model.TurnOnCommand;
+
+public class Test {
+	
+//	Lack of abstraction
+//	undo and redo functionality
+//	difficulty in code maintenance
+	
+	
+	public static void main(String[] args) {
+		RemoteControl remoteControl = new RemoteControl();
+		remoteControl.setCommand(new TurnOnCommand(null));
+		remoteControl.pressButton();
+		
+		remoteControl.setCommand(new TurnOffCommand(null));
+		remoteControl.pressButton();
+		
+		
+	}
+
+}

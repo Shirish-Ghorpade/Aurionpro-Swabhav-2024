@@ -1,0 +1,15 @@
+package com.aurionpro.creational.factory.test;
+
+import com.aurionpro.creational.factory.model.Maruti;
+
+public class Test {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Maruti maruti = new Maruti();
+		Tata tata = new Tata();
+		
+
+	}
+
+}

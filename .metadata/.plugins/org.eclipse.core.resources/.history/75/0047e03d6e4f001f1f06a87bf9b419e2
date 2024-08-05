@@ -1,0 +1,10 @@
+package com.aurionpro.builder.model;
+
+public class BuilderDesignPattern {
+	
+	
+//	We have the to pass many arguments to create the object
+//	Some parameters might be optional
+//	fcatory class takes all responsibility for creating object is heavy then all complexity is the part of of factory class.
+
+}

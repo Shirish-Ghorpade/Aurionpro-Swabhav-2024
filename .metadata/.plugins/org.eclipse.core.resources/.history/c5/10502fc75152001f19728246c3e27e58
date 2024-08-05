@@ -1,0 +1,17 @@
+package com.aurionpro.model;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+import org.junit.jupiter.api.Test;
+
+public class PlayerTest {
+	@Test
+	void testSetName() {
+		PlayingPiece playingPiece = new PlayingPieceX();
+		Player player = new Player("Player 'X'", playingPiece);
+		
+		assertEquals("Player 'X'", player.getName());
+		
+		
+	}
+}

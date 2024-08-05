@@ -1,0 +1,5 @@
+package com.aurionpro.abstractfactory.test;
+
+public enum Cars {
+	MARUTI, TATA, MAHINDRA
+}

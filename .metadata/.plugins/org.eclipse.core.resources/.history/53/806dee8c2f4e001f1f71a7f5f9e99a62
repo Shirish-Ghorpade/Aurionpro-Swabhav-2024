@@ -1,0 +1,24 @@
+package com.aurionpro.solution.test;
+
+public class Triangle {
+	private double length;
+	private double breath;
+	public Triangle(double length, double breath) {
+		super();
+		this.length = length;
+		this.breath = breath;
+	}
+	public double getLength() {
+		return length;
+	}
+	public void setLength(double length) {
+		this.length = length;
+	}
+	public double getBreath() {
+		return breath;
+	}
+	public void setBreath(double breath) {
+		this.breath = breath;
+	}
+	
+}

@@ -1,0 +1,18 @@
+package com.aurionpro.solution.test;
+
+import com.aurionpro.solution.model.Guitar;
+import com.aurionpro.solution.model.Inventory;
+
+public class FindGuitarTester {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Inventory inventory = new Inventory();
+		Guitar whatErinLikes = new Guitar("", 0, "fender", "Stracastor", "electric", "Alder", "Alder");
+		
+	}
+	private static void intializeInventory() {
+		
+	}
+
+}

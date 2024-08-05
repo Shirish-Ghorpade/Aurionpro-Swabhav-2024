@@ -1,0 +1,7 @@
+package com.aurionpro.strutural.adaptor.model;
+
+public class Biscuit implements IItem{
+	private String name;
+	
+
+}

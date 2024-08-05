@@ -1,0 +1,8 @@
+package com.aurionpro.model;
+
+public class Player {
+	private String name;
+	private PlayingPiece playingPiece;
+	
+
+}

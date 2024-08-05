@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;com.aurionpro.model&apos; to &apos;com.aurionpro.test&apos;&#x0D;&#x0A;- Original project: &apos;25-unittesting-app&apos;&#x0D;&#x0A;- Original element: &apos;25-unittesting-app/src/test/java/com.aurionpro.model&apos;&#x0D;&#x0A;- Renamed element: &apos;25-unittesting-app/src/test/java/com.aurionpro.test&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;com.aurionpro.model&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src\/test\/java&lt;com.aurionpro.model" name="com.aurionpro.test" qualified="false" references="true" stamp="1722838640718" textual="false" version="1.0"/>
+</session>

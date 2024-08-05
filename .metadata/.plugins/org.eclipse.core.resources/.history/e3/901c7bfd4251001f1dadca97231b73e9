@@ -1,0 +1,27 @@
+package com.aurionpro.behaviour.command.model;
+
+public class AirConditoner {
+	boolean turnOn = false;
+	int temperature;
+	public AirConditoner(boolean turnOn, int temperature) {
+		super();
+		this.turnOn = turnOn;
+		this.temperature = temperature;
+	}
+	public boolean isTurnOn() {
+		return turnOn;
+	}
+	public void setTurnOn(boolean turnOn) {
+		this.turnOn = turnOn;
+	}
+	public int getTemperature() {
+		return temperature;
+	}
+	public void setTemperature(int temperature) {
+		this.temperature = temperature;
+	}
+	
+	
+	
+
+}

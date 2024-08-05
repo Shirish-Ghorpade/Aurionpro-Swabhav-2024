@@ -1,0 +1,5 @@
+package com.aurionpro.builder.model;
+
+public class BuilderDesignPattern {
+
+}

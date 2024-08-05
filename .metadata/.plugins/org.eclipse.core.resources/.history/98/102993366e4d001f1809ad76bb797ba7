@@ -1,0 +1,8 @@
+package com.aurionpro.test;
+
+public class Account {
+	
+	private long accountNumber;
+	
+
+}

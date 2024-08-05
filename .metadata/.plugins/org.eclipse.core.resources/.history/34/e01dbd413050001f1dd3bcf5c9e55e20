@@ -1,0 +1,6 @@
+package com.aurionpro.structural.composite.test;
+
+public class ComponentTest {
+//	Composite design pattern means object inside the object
+	
+}
