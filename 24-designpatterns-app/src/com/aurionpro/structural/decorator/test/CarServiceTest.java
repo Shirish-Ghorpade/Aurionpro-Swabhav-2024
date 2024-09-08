@@ -10,7 +10,6 @@ public class CarServiceTest {
 		ICarService car = new CarInspection();
 		OilChange carOil = new OilChange(car);
 		WheelAlign carAlign = new WheelAlign(carOil);
-		
 		System.out.println(carAlign.getCost());
 	}
 }

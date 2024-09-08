@@ -14,6 +14,4 @@ public class DatabaseConnection {
 	public void status() {
 		System.out.println("connected");
 	}
-	
-
 }

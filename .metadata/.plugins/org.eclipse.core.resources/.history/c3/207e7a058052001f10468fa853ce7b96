@@ -1,5 +1,0 @@
-package com.aurionpro.simple_solution.model;
-
-public interface InvoiceDao {
-	public void save();
-}

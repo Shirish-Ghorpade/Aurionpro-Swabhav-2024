@@ -1,7 +1,0 @@
-package com.aurionpro.behavioural.observer.test;
-
-import com.aurionpro.behavioural.observer.model.Account;
-
-public class AccountTest {
-	Account account = new 
-}

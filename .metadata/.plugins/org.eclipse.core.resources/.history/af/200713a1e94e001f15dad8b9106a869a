@@ -1,5 +1,0 @@
-package com.aurionpro.solution.model;
-
-public enum BUILDER {
-	FENDER, MARTIN, GIBSON, COLLINGS, OLSON, RYAN, PRS, ANY; 
-}

@@ -15,7 +15,8 @@ public class OperationStatergy {
 	public void setOperation(IOperation operation) {
 		this.operation = operation;
 	}
-	public void doOperation(int a,int b) {
+
+	public void doOperation(int a, int b) {
 		System.out.println(operation.doOperatiopn(a, b));
 	}
 }

@@ -1,9 +1,0 @@
-package com.aurionpro.violation.model;
-
-public class Invoice {
-//	We want to access the method and properties of marker class so we create the reference in invoice
-	private Marker marker;
-//	Here we add reference the as per our requirement
-	private int quantity;
-
-}

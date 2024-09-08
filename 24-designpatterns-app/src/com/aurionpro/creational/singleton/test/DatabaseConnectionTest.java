@@ -9,6 +9,5 @@ public class DatabaseConnectionTest {
 		
 		DatabaseConnection databaseConnection1 = DatabaseConnection.getDatabaseConnection();
 		databaseConnection1.status();
-		
 	}
 }

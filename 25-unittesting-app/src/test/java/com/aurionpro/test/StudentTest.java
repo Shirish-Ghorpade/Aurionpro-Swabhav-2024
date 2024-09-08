@@ -22,7 +22,6 @@ public class StudentTest {
 
 	@Test
 	void testCalculatePercentage() {
-
 		Mockito.when(studentService.getMarks()).thenReturn((double) 650.0);
 		Mockito.when(studentService.getNumberSubjects()).thenReturn(10);
 		assertEquals(65, student.calculatePercentage());

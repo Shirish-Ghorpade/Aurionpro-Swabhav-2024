@@ -3,12 +3,15 @@
 	<section name="MavenProjectWizardArtifactPage">
 		<list key="groupId">
 			<item value="com.aurionpro"/>
+			<item value="com.aurionpro.model"/>
 		</list>
 		<list key="name">
 		</list>
 		<list key="artifactId">
-			<item value="Assignment-04-08-24-tic-tac-toe-TDD"/>
-			<item value="26-unittesting-app"/>
+			<item value="34-spring2-app"/>
+			<item value="33-spring-core-app"/>
+			<item value="26-tic-tac-toe-new_version-app"/>
+			<item value="Assignment-tic-tac-toe-new_version-app"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
@@ -73,6 +76,7 @@
 	</section>
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="D:\Aurionpro_Training\25-unittesting-app\src\test\java\com\aurionpro\test\StudentTest.java"/>
 			<item value="D:\Aurionpro_Training\25-unit-testing-app\src\test"/>
 		</list>
 		<list key="projectNameTemplate">

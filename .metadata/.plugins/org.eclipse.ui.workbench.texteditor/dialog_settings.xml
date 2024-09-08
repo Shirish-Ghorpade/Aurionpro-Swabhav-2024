@@ -6,29 +6,34 @@
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="0" key="selection"/>
+		<item value="inserted amount" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="inserted amount"/>
+			<item value="session"/>
+			<item value="nav__link nav__link--btn"/>
+			<item value="balanceStr"/>
+			<item value="customerID"/>
+			<item value="senderCurrentBalance"/>
+			<item value="senderPreviousBalance"/>
+			<item value="currBalance"/>
+			<item value="request"/>
 			<item value="1"/>
 			<item value="0"/>
 			<item value="list"/>
 			<item value="Employee"/>
 			<item value="queue"/>
 			<item value="accounts[i]"/>
-			<item value="balance"/>
-			<item value="gameWin"/>
-			<item value="finalScore"/>
-			<item value="number"/>
-			<item value="double"/>
-			<item value="sum"/>
-			<item value="b"/>
-			<item value="b "/>
-			<item value="a "/>
 		</list>
 		<list key="replacehistory">
+			<item value="amountStr"/>
+			<item value="senderBalanceAfterTransaction"/>
+			<item value="senderBalanceBeforeTransaction"/>
+			<item value="senderCurrentBalance"/>
+			<item value=""/>
 			<item value="0"/>
 			<item value="1"/>
 			<item value="fileSystemList"/>
@@ -39,18 +44,13 @@
 			<item value="flag"/>
 			<item value="number"/>
 			<item value="finalScore"/>
-			<item value="int"/>
-			<item value="number2"/>
-			<item value="number2 "/>
-			<item value="number1 "/>
-			<item value="number1"/>
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
 		<item value="284" key="DIALOG_WIDTH"/>
 		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
 		<item value="391" key="DIALOG_HEIGHT"/>
-		<item value="774" key="DIALOG_X_ORIGIN"/>
-		<item value="190" key="DIALOG_Y_ORIGIN"/>
+		<item value="1017" key="DIALOG_X_ORIGIN"/>
+		<item value="93" key="DIALOG_Y_ORIGIN"/>
 	</section>
 </section>

@@ -1,7 +1,0 @@
-package com.aurionpro.violation.model;
-
-public class FixedDeposit {
-	private int accountNumber;
-	private String name;
-	private double principle;
-}

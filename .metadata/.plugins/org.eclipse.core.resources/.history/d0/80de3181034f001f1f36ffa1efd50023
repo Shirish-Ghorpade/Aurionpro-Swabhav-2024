@@ -1,9 +1,0 @@
-package com.aurionpro.creational.factory.model;
-
-public class AccountFactory {
-	
-	public static void makeAccount(AccountType) {
-		if()
-	}
-
-}

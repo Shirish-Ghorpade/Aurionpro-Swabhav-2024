@@ -13,7 +13,7 @@ public class InsufficientBalanceException extends RuntimeException {
 	@Override
 	public String getMessage() {
 		// TODO Auto-generated method stub
-		return "Your entered amount is " + amount+ ". please enter the smaller amount than your balance "+balance;
+		return "Your entered amount is " + amount + ". please enter the smaller amount than your balance " + balance;
 
 	}
 }

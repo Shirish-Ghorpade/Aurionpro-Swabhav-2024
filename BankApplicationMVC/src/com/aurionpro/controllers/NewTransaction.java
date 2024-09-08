@@ -39,6 +39,7 @@ public class NewTransaction extends HttpServlet {
 		ResultSet resultSet = null;
 
 		int customerID = (int) session.getAttribute("customerID");
+		System.out.println("customerID is "+customerID);
 		long senderAccountNumber = dbUtil.getSenderAccountNumber(customerID);
 
 		String amountStr = request.getParameter("amount");

@@ -1,8 +1,0 @@
-package com.aurionpro.violation.model;
-
-public class Invoice {
-	private Marker marker;
-//	Here we add reference the as per our requirement;
-	private int quantity;
-
-}

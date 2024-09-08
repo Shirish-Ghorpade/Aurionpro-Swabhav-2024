@@ -1,6 +1,0 @@
-package com.aurionpro.behaviour.command.model;
-
-public class TurnOnCommand implements ICommand{
-	
-
-}

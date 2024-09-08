@@ -35,11 +35,15 @@ public class PassBookServlet extends HttpServlet {
 		}
 		dbUtil = DbUtil.getDbUtil();
 		Connection connection = dbUtil.connectToDb();
-		int customerID = (int) session.getAttribute("customerID");
-		long senderAccountNumber = dbUtil.getSenderAccountNumber(customerID);
-		System.out.println(senderAccountNumber);
+		String username = (String) session.getAttribute("username");
+		String password = (String) session.getAttribute("password");
 
 		try {
+			int customerID = getCustomerId(username, password, connection);
+			System.out.println("customerID is " +customerID);
+			session.setAttribute("customerID", customerID);
+			long senderAccountNumber = dbUtil.getSenderAccountNumber(customerID);
+			System.out.println(senderAccountNumber);
 			List<Transactions> transactionsList = new ArrayList<>();
 			String sortType = request.getParameter("sort");
 			String sqlQuery = "SELECT SenderAccountNumber, ReceiverAccountNumber, TransactionType, Amount, Date FROM transactions where SenderAccountNumber=?";
@@ -70,5 +74,19 @@ public class PassBookServlet extends HttpServlet {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+	}
+
+	private int getCustomerId(String username, String password, Connection connection) throws SQLException {
+		String query = "SELECT customerId FROM customers WHERE emailID=? AND password=?";
+		try (PreparedStatement preparedStatement = connection.prepareStatement(query)) {
+			preparedStatement.setString(1, username);
+			preparedStatement.setString(2, password);
+			try (ResultSet resultSet = preparedStatement.executeQuery()) {
+				if (resultSet.next()) {
+					return resultSet.getInt("customerId");
+				}
+			}
+		}
+		return 0;
 	}
 }

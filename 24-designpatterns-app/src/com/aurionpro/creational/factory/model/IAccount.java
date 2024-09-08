@@ -5,5 +5,4 @@ public interface IAccount {
 	void debit(double amount);
 	String getBalance();
 	String getAccountNumber();
-
 }

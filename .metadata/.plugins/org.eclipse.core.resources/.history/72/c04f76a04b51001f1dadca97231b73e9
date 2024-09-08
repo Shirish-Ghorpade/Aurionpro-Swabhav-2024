@@ -1,8 +1,0 @@
-package com.aurionpro.behaviour.Iterator.model;
-
-import java.util.Iterator;
-
-public interface Aggregate {
-	Iterator createIterator();
-
-}

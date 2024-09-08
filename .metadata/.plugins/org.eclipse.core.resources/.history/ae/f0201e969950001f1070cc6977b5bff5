@@ -1,8 +1,0 @@
-package com.aurionpro.behaviour.state.test;
-
-public class Test {
-	public static void main(String[] args) {
-		Packet packet = new Packet();
-	}
-
-}

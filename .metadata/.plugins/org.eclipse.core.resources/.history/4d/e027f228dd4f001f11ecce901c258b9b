@@ -1,9 +1,0 @@
-package com.aurionpro.structural.decorator.model;
-
-public abstract class WheelAlign extends CarServiceDecorator{
-	@Override
-	public double wheelAlign() {
-		// TODO Auto-generated method stub
-		return 400+super.getCost();
-	}
-}

@@ -10,6 +10,8 @@ public class Test {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
+		
+//		Always make reference variable of interface
 		ICar car;
 		car = CarFactory.makeCar("Maruti");
 		car.start();

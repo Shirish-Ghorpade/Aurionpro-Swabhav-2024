@@ -87,6 +87,13 @@ public class UpdatePage extends HttpServlet {
 			preparedStatement.setString(1, newPassword);
 			preparedStatement.setInt(2, customerID);
 			preparedStatement.executeUpdate();
+			
+			preparedStatement = connection.prepareStatement("Update users set password=? where username=? and password=?");
+			preparedStatement.setString(1, newPassword);
+			String username = (String) session.getAttribute("username");
+			preparedStatement.setString(2, username);
+			preparedStatement.setString(3, previousPassword);
+			preparedStatement.executeUpdate();
 
 			session.invalidate();
 			RequestDispatcher requestDispatcher = request.getRequestDispatcher("/LoginPage.jsp");
